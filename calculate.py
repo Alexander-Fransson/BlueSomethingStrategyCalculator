@@ -51,11 +51,21 @@ starting_emergency_loans = 4896733
 # bank contract index is 0.9136
 # the interest then becomes 4.57%
 
-# this fucntion assumes a linear relationship between circularity and interest rates
+'''
+
+Margin (Real Estate loan)
+4.00%
+Margin (Machines loan)
+5.00%
+Margin (Overdraft)
+6.00%
+
+'''
 
 index_at_zero = 1.2136
 index_at_hundered = 0.9136
 
+# these fucntion assume a linear relationship between circularity and interest rates
 
 def calculate_base_interest():
     interest_at_zero = .0607
