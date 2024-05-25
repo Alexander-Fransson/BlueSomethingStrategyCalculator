@@ -10,10 +10,10 @@
 
 ## Current supply Chain
 
-supplyer -> 
-Blue connection ( component storage -> component assembly -> finished goods) ->
-retailers ->
-customers -> landfill
+supplyer ->  
+Blue connection ( component storage -> component assembly -> finished goods) ->  
+retailers ->  
+customers -> landfill  
 
 * 1 product
 * 7 components
@@ -77,7 +77,7 @@ Sales and service contracts with RETAIL
 
 ## How prices are set
 
-Contract INDEX determines sales price, promise more earn more.
+Contract INDEX determines sales price, promise more earn more.  
 index * basic price = sales price
 
 ## Recomended workflow
@@ -90,4 +90,36 @@ index * basic price = sales price
 6. Finance the plans with lones
 
 Apply the knowledge gained in step 2 to step 3-6 and document everything
+
+## Key performance indicators KPI's
+
+### ROI (return on investment)
+
+Profit after tax divided by total assests
+
+### ROM (return on materials)
+
+Profit after tax divided by net virgin materials used in kg
+
+### Inflow circularity
+
+How circular the materials are that the company sources  
+How much of the material is from recycled sources
+circular inflow (non virgin material) / total inflow
+
+### Outflow circularity
+
+How circular the materials are that the company produces  
+How much of the products that the company produces can be recycled  
+recoverable outflow / total outflow
+
+### Circularity
+
+How much of the materials you are bringing back into the supply chain VS going into the landfil  
+Shows how much of the materials used are kept in circulation  
+Is the avarage of inflow and outflow circularity  
+(inflow_circularity + outflow_circularity) / 2  
+Companies are willing to pay extra for this
+
+## Finance
 

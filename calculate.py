@@ -1,3 +1,7 @@
+from financial_statement_modules.income_statement import IncomeStatement
+
+my_income_statement = IncomeStatement()
+
 print('hi world')
 
 # Create a python script to optimise the blue eBike group work, 
@@ -5,5 +9,37 @@ print('hi world')
 # then ccreate a script that prepares and compares all results. 
 # If you miss some data ask it on monday or over the web.
 
-def Return_On_Assets():
-    return 'maybe'
+#########
+# KPI's #
+#########
+
+def inflow_circularity(non_virgin_material, total_inflow):
+    return non_virgin_material / total_inflow
+
+def outflow_circularity(recoverable_outflow, total_outflow):
+    return recoverable_outflow / total_outflow
+
+# I am a bit uncertain on this one but it can probably be checked
+def circularity(inflow_circularity, outflow_circularity):
+    return (inflow_circularity + outflow_circularity)/2
+
+def return_on_investments(profit_after_tax, total_assets):
+    return profit_after_tax/total_assets
+
+def return_on_materials(profit_after_tax, net_virgin_materials_used):
+    return profit_after_tax / net_virgin_materials_used
+
+# [kg]
+def net_virgin_materials_used(virgin_material_purchased, recycled_materials_delivered):
+    return virgin_material_purchased/recycled_materials_delivered
+
+def gross_profit(net_sales_revenue, cogs):
+    return net_sales_revenue - cogs
+
+########################
+# Financial statements #
+########################
+
+# not matching income statement?
+starting_cash_position = 20800
+starting_emergency_loans = 4896733
