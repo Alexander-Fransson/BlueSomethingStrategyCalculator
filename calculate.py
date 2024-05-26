@@ -36,3 +36,22 @@ def net_virgin_materials_used(virgin_material_purchased, recycled_materials_deli
     return virgin_material_purchased/recycled_materials_delivered
 
 
+######################
+# Supply chain stuff #
+######################
+
+max_refurbishment_age:int # products older then this will not be refurbished
+# you will have to chack out what the worth of the products are at what age
+# refurbished items are sold at second hand value
+
+shifts:int
+# each shift has 16 full time employees
+# 7 man hours to refurbish a bicicle
+# can be discounted by repair time discounted componeients
+# 70% of returned items will be refurbished, the rest are fildeted and dont take labor
+# if labor is lacking the diference will be made up by 60€/h workers
+
+full_time_employee:dict
+# works 40 hours a week and costs 40000€ a year
+# every maintanence service takes 60h
+
