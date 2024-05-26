@@ -1,6 +1,7 @@
 from component import BasicComponent
 
 # mAKE A PARRENT WITH A SORT alternatices FUNCTION
+# use normalize prioritize
 
 class Frames:
     def __init__(self):
