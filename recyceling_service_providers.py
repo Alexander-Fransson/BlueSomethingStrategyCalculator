@@ -9,7 +9,9 @@ class RSP:
         component_remanufacturing_efficiency:float,
         material_recycling_efficiency:float,
         dissasembly_cost_per_piece:float,
-        energy_cost_of_recycling_a_ton:float
+        energy_cost_of_recycling_a_ton:float,
+        remanufacture:bool,
+        recycle:bool
     ):
         self.rsp_transport_cost = rsp_transport_cost_per_product
         self.dissasembly_capacity = dissasembly_capacity_products_per_day
@@ -20,9 +22,13 @@ class RSP:
         self.material_recycling_efficiency = material_recycling_efficiency
         self.dissasembly_cost = dissasembly_cost_per_piece
         self.energy_cost_of_recycling_a_ton = energy_cost_of_recycling_a_ton
+        self.remanufacture = remanufacture
+        self.recycle = recycle
 
 class RSPs:
     def __init__(self):
+
+        # We might be able to negotiate with these for better circularity better circularity
 
         self.GreenCycle = RSP(
             rsp_transport_cost_per_product=12.00,
@@ -79,7 +85,7 @@ class RSPs:
             dissasembly_cost_per_piece=64.00,
             energy_cost_of_recycling_a_ton=100.00
         )
-        self.NewKid =  RSP(
+        self.NewKid = RSP(
             rsp_transport_cost_per_product=17.00,
             dissasembly_capacity_products_per_day=50,
             remanufacturing_capacity_components_per_day=200,
@@ -91,4 +97,8 @@ class RSPs:
             energy_cost_of_recycling_a_ton=90.00
         )
 
+    def set_recycling_method(recycling_company:RSP, recycle:bool, remanufacture:bool):
+        recycling_company.remanufacture = remanufacture
+        recycling_company.recycle = recycle
 
+        return recycling_company

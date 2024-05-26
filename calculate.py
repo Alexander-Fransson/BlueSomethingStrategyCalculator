@@ -2,6 +2,24 @@ from financial_statement_modules.income_statement import IncomeStatement
 
 #my_income_statement = IncomeStatement()
 
+#############
+# Todo list
+'''
+* Do everything related to design and purchasing and make a small algorithm to calculate the best decisions for you
+* Look at supply chain report and create modules for each component
+* Look at sales roals and sales reports and make modules for everything
+
+'''
+
+###############
+# Findings
+
+
+#*You can see demand on the past sales report thing
+# you cannot have warenty and lease at the same time
+# have the teammates note down everything they can do and how it effects the price
+
+
 print('hi world')
 
 # Create a python script to optimise the blue eBike group work, 
@@ -54,4 +72,5 @@ shifts:int
 full_time_employee:dict
 # works 40 hours a week and costs 40000€ a year
 # every maintanence service takes 60h
+# you can decide how many to hire
 
