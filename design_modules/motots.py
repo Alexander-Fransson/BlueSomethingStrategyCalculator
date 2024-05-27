@@ -2,7 +2,11 @@ from component import BasicComponent
 
 class Motors:
     def __init__(self):
-        
+        self.cost_per_shipment = 90
+        self.transport_cost_per_palet = 65
+        self.transport_cost_per_full_truck = 1700
+        self.period_order_to_buyer_wharehouse = 12
+
         self.alternatives = [
             BasicComponent(
                 name='Power bike',

@@ -2,7 +2,11 @@ from component import BasicComponent
 
 class Saddles:
     def __init__(self):
-        
+        self.cost_per_shipment = 100
+        self.transport_cost_per_palet = 20
+        self.transport_cost_per_full_truck = 500
+        self.period_order_to_buyer_wharehouse = 3
+
         self.alternatives = [
             BasicComponent(
                 name='Saddle pro health',

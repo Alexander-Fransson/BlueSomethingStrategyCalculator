@@ -16,6 +16,7 @@ class BankInterestNegotiations:
         self.machine_loan_margin = .05
         self.overdraft_loan_margin = .06 #emergency loan?
 
+        self.current_emergency_loan_rate = .28
         #vendor lease I dont have access to information about yet
 
     # assumes linear relationship based on circularity

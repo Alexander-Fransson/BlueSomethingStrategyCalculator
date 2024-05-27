@@ -2,7 +2,11 @@ from component import BasicComponent
 
 class Mechanisms:
     def __init__(self):
-        
+        self.cost_per_shipment = 150
+        self.transport_cost_per_palet = 120
+        self.transport_cost_per_full_truck = 3500
+        self.period_order_to_buyer_wharehouse = 17
+
         self.alternatives = [
             BasicComponent(
                 name='Bike gear plus',

@@ -5,6 +5,10 @@ from design_modules.component import BasicComponent, ChooseByCriteria
 
 class Frames(ChooseByCriteria):
     def __init__(self):
+        self.cost_per_shipment = 120
+        self.transport_cost_per_palet = 40
+        self.transport_cost_per_full_truck = 900
+        self.period_order_to_buyer_wharehouse = 8
 
         self.alternatives = [
             BasicComponent(

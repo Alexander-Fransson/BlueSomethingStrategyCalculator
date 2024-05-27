@@ -5,7 +5,7 @@ class Raw_Material:
             recyclabe_cost_factor:float,
             recycling_price:float,
             recycling_loss:float
-        ) -> None:
+        ):
         
         self.basic_price = basic_price
         self.recyclabe_cost_factor = recyclabe_cost_factor
@@ -13,7 +13,8 @@ class Raw_Material:
         self.recycling_loss = recycling_loss
 
 class Raw_Materials:
-    def __init__(self) -> None:
+    
+    def __init__(self):
         self.steel = Raw_Material(
             basic_price=3,
             recyclabe_cost_factor=12,

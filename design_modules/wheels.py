@@ -2,7 +2,11 @@ from component import BasicComponent
 
 class Wheels:
     def __init__(self):
-        
+        self.cost_per_shipment = 120
+        self.transport_cost_per_palet = 70
+        self.transport_cost_per_full_truck = 2100
+        self.period_order_to_buyer_wharehouse = 12
+
         self.alternatives = [
             BasicComponent(
                 name='Wheels2drive',
