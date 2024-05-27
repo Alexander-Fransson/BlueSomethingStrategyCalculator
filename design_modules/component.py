@@ -89,11 +89,9 @@ class ChooseByCriteria:
         repair_time_discount_priority:int,
         price_per_piece_priority:int     
     ):  
-        #normalize all the values to be relative to the average of that type
         normalized_instances = self.normalize_alternatives()
         prioritized_alternetives = []
 
-        # multiply the normalized values with their priority
         for i in normalized_instances:
             prioritized_instance = {
                 'name':i.name,
@@ -111,9 +109,7 @@ class ChooseByCriteria:
 
         sorted_prioritized_alternatives = sorted(prioritized_alternetives, key=lambda x:x['value'])
 
-        # maybe retrun the entire top object
-
         return {
-            'highest':[i for i in self.alternatives if i.name == sorted_prioritized_alternatives[-1]['name']][0].__dict__,
-            'lowest':[i for i in self.alternatives if i.name == sorted_prioritized_alternatives[0]['name']][0].__dict__
+            'best':[i for i in self.alternatives if i.name == sorted_prioritized_alternatives[-1]['name']][0].__dict__,
+            'worst':[i for i in self.alternatives if i.name == sorted_prioritized_alternatives[0]['name']][0].__dict__
         }

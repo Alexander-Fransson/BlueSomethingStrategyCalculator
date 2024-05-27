@@ -12,7 +12,7 @@ class Frames(ChooseByCriteria):
                 remanufacturability=.4,
                 remanufacturing_cost=110,
                 recyclability=.45,
-                durability=1+0.5,
+                durability=0.5,
                 weight_in_kg=4,
                 repair_time_discount=0,
                 price_per_piece=310
@@ -22,7 +22,7 @@ class Frames(ChooseByCriteria):
                 remanufacturability=.5,
                 remanufacturing_cost=130,
                 recyclability=.5,
-                durability=1+0.3,
+                durability=0.3,
                 weight_in_kg=3.6,
                 repair_time_discount=0,
                 price_per_piece=300
@@ -32,7 +32,7 @@ class Frames(ChooseByCriteria):
                 remanufacturability=.3,
                 remanufacturing_cost=50,
                 recyclability=.95,
-                durability=1+0.1,
+                durability=0.1,
                 weight_in_kg=5,
                 repair_time_discount=0,
                 price_per_piece=210
@@ -42,7 +42,7 @@ class Frames(ChooseByCriteria):
                 remanufacturability=.5,
                 remanufacturing_cost=90,
                 recyclability=.75,
-                durability=1-.1,
+                durability=-.1,
                 weight_in_kg=3.2,
                 repair_time_discount=0,
                 price_per_piece=300
@@ -52,7 +52,7 @@ class Frames(ChooseByCriteria):
                 remanufacturability=.4,
                 remanufacturing_cost=70,
                 recyclability=.4,
-                durability=1+0,
+                durability=0,
                 weight_in_kg=4,
                 repair_time_discount=0,
                 price_per_piece=250
@@ -62,7 +62,7 @@ class Frames(ChooseByCriteria):
                 remanufacturability=.9,
                 remanufacturing_cost=55,
                 recyclability=.6,
-                durability=1+0,
+                durability=0,
                 weight_in_kg=4,
                 repair_time_discount=0,
                 price_per_piece=325
@@ -72,7 +72,7 @@ class Frames(ChooseByCriteria):
                 remanufacturability=.85,
                 remanufacturing_cost=55,
                 recyclability=.6,
-                durability=1+0,
+                durability=0,
                 weight_in_kg=4,
                 repair_time_discount=0,
                 price_per_piece=310

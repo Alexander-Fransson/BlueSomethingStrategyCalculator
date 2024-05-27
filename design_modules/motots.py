@@ -9,7 +9,7 @@ class Motors:
                 remanufacturability=.3,
                 remanufacturing_cost=35,
                 recyclability=.9,
-                durability=1+0,
+                durability=0,
                 weight_in_kg=2,
                 repair_time_discount=0,
                 price_per_piece=125
@@ -19,7 +19,7 @@ class Motors:
                 remanufacturability=.5,
                 remanufacturing_cost=45,
                 recyclability=.65,
-                durability=1+0,
+                durability=0,
                 weight_in_kg=1.8,
                 repair_time_discount=0,
                 price_per_piece=195
@@ -29,7 +29,7 @@ class Motors:
                 remanufacturability=.5,
                 remanufacturing_cost=60,
                 recyclability=.4,
-                durability=1+0,
+                durability=0,
                 weight_in_kg=2,
                 repair_time_discount=0,
                 price_per_piece=150
@@ -39,7 +39,7 @@ class Motors:
                 remanufacturability=.5,
                 remanufacturing_cost=50,
                 recyclability=.45,
-                durability=1+0.2,
+                durability=0.2,
                 weight_in_kg=1.9,
                 repair_time_discount=.2,
                 price_per_piece=190
@@ -49,7 +49,7 @@ class Motors:
                 remanufacturability=.4,
                 remanufacturing_cost=50,
                 recyclability=.5,
-                durability=1+0.2,
+                durability=0.2,
                 weight_in_kg=2,
                 repair_time_discount=.15,
                 price_per_piece=190
@@ -59,7 +59,7 @@ class Motors:
                 remanufacturability=.75,
                 remanufacturing_cost=35,
                 recyclability=.55,
-                durability=1+0,
+                durability=0,
                 weight_in_kg=2,
                 repair_time_discount=0,
                 price_per_piece=180
@@ -69,7 +69,7 @@ class Motors:
                 remanufacturability=.85,
                 remanufacturing_cost=35,
                 recyclability=.5,
-                durability=1+0,
+                durability=0,
                 weight_in_kg=2,
                 repair_time_discount=.05,
                 price_per_piece=220
