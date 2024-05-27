@@ -12,7 +12,13 @@ class Wheels:
                 durability=0.2,
                 weight_in_kg=1.5,
                 repair_time_discount=.15,
-                price_per_piece=140
+                price_per_piece=140,
+                steel=0,
+                rubber=.5,
+                plastic=0,
+                cardboard=0,
+                aluminium=1,
+                battery_acid=0
             ),
             BasicComponent(
                 name='Wheely',
@@ -22,7 +28,13 @@ class Wheels:
                 durability=0,
                 weight_in_kg=1.5,
                 repair_time_discount=0,
-                price_per_piece=150
+                price_per_piece=150,
+                steel=0,
+                rubber=.5,
+                plastic=0,
+                cardboard=0,
+                aluminium=1,
+                battery_acid=0
             ),
             BasicComponent(
                 name='Wheel_light',
@@ -32,7 +44,13 @@ class Wheels:
                 durability=-0.1,
                 weight_in_kg=1.3,
                 repair_time_discount=0,
-                price_per_piece=130
+                price_per_piece=130,
+                steel=0,
+                rubber=.5,
+                plastic=0,
+                cardboard=0,
+                aluminium=.8,
+                battery_acid=0
             ),
             BasicComponent(
                 name='Wheel_standard',
@@ -42,7 +60,13 @@ class Wheels:
                 durability=0,
                 weight_in_kg=1.5,
                 repair_time_discount=0,
-                price_per_piece=100
+                price_per_piece=100,
+                steel=0,
+                rubber=.5,
+                plastic=0,
+                cardboard=0,
+                aluminium=1,
+                battery_acid=0
             ),
             BasicComponent(
                 name='Durawheel',
@@ -52,7 +76,13 @@ class Wheels:
                 durability=0.3,
                 weight_in_kg=1.5,
                 repair_time_discount=.1,
-                price_per_piece=140
+                price_per_piece=140,
+                steel=0,
+                rubber=.5,
+                plastic=0,
+                cardboard=0,
+                aluminium=1,
+                battery_acid=0
             ),
             BasicComponent(
                 name='Steel_wheel',
@@ -62,7 +92,13 @@ class Wheels:
                 durability=0.1,
                 weight_in_kg=2,
                 repair_time_discount=-.03,
-                price_per_piece=80
+                price_per_piece=80,
+                steel=1.5,
+                rubber=.5,
+                plastic=0,
+                cardboard=0,
+                aluminium=0,
+                battery_acid=0
             ),
             BasicComponent(
                 name='C_Wheel',
@@ -72,6 +108,12 @@ class Wheels:
                 durability=0,
                 weight_in_kg=1.5,
                 repair_time_discount=.05,
-                price_per_piece=150
+                price_per_piece=150,
+                steel=0,
+                rubber=.5,
+                plastic=0,
+                cardboard=0,
+                aluminium=1,
+                battery_acid=0
             )
         ]

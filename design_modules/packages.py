@@ -12,7 +12,13 @@ class Packages:
                 durability=0,
                 weight_in_kg=.05,
                 repair_time_discount=0,
-                price_per_piece=15
+                price_per_piece=15,
+                steel=0,
+                rubber=0,
+                plastic=0.01,
+                cardboard=0.04,
+                aluminium=0,
+                battery_acid=0
             ),
             BasicComponent(
                 name='Luxury box basic',
@@ -22,6 +28,12 @@ class Packages:
                 durability=0, # check if acurate
                 weight_in_kg=.05,
                 repair_time_discount=0,
-                price_per_piece=10
+                price_per_piece=10,
+                steel=0,
+                rubber=0,
+                plastic=0.01,
+                cardboard=0.04,
+                aluminium=0,
+                battery_acid=0
             ),
         ]

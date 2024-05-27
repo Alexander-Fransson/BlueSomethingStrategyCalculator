@@ -12,7 +12,13 @@ class Batteries:
                 durability=0.2,
                 weight_in_kg=3.5,
                 repair_time_discount=0,
-                price_per_piece=200
+                price_per_piece=200,
+                steel=1,
+                rubber=0,
+                plastic=1,
+                cardboard=0,
+                aluminium=0,
+                battery_acid=1.5
             ),
             BasicComponent(
                 name='Battery robust',
@@ -22,7 +28,13 @@ class Batteries:
                 durability=0.3,
                 weight_in_kg=3.6,
                 repair_time_discount=0,
-                price_per_piece=200
+                price_per_piece=200,
+                steel=1.1,
+                rubber=0,
+                plastic=1,
+                cardboard=0,
+                aluminium=0,
+                battery_acid=1.5
             ),
             BasicComponent(
                 name='Battery light',
@@ -32,7 +44,13 @@ class Batteries:
                 durability=0,
                 weight_in_kg=3,
                 repair_time_discount=0,
-                price_per_piece=220
+                price_per_piece=220,
+                steel=.5,
+                rubber=0,
+                plastic=1,
+                cardboard=0,
+                aluminium=0,
+                battery_acid=1.5
             ),
             BasicComponent(
                 name='Battery classic',
@@ -42,7 +60,13 @@ class Batteries:
                 durability=0,
                 weight_in_kg=3.5,
                 repair_time_discount=0,
-                price_per_piece=185
+                price_per_piece=185,
+                steel=1,
+                rubber=0,
+                plastic=1,
+                cardboard=0,
+                aluminium=0,
+                battery_acid=1.5
             ),
             BasicComponent(
                 name='Battery blue',
@@ -52,7 +76,13 @@ class Batteries:
                 durability=0,
                 weight_in_kg=3.5,
                 repair_time_discount=0,
-                price_per_piece=210
+                price_per_piece=210,
+                steel=1,
+                rubber=0,
+                plastic=1,
+                cardboard=0,
+                aluminium=0,
+                battery_acid=1.5
             ),
             BasicComponent(
                 name='Battery smart',
@@ -62,6 +92,12 @@ class Batteries:
                 durability=-.1,
                 weight_in_kg=3.5,
                 repair_time_discount=0,
-                price_per_piece=170
+                price_per_piece=170,
+                steel=1,
+                rubber=0,
+                plastic=1,
+                cardboard=0,
+                aluminium=0,
+                battery_acid=1.5
             ),
         ]

@@ -12,7 +12,13 @@ class Mechanisms:
                 durability=0.3,
                 weight_in_kg=0.7,
                 repair_time_discount=.2,
-                price_per_piece=385
+                price_per_piece=385,
+                steel=0.1,
+                rubber=0,
+                plastic=0,
+                cardboard=0,
+                aluminium=0.6,
+                battery_acid=0
             ),
             BasicComponent(
                 name=' Gear and more',
@@ -22,7 +28,13 @@ class Mechanisms:
                 durability=0.5,
                 weight_in_kg=.7,
                 repair_time_discount=.25,
-                price_per_piece=400
+                price_per_piece=400,
+                steel=0.1,
+                rubber=0,
+                plastic=0,
+                cardboard=0,
+                aluminium=0.6,
+                battery_acid=0
             ),
             BasicComponent(
                 name='Speedy',
@@ -32,7 +44,13 @@ class Mechanisms:
                 durability=0,
                 weight_in_kg=.7,
                 repair_time_discount=0,
-                price_per_piece=415
+                price_per_piece=415,
+                steel=0.1,
+                rubber=0,
+                plastic=0,
+                cardboard=0,
+                aluminium=0.6,
+                battery_acid=0
             ),
             BasicComponent(
                 name='Mechanism standard',
@@ -42,7 +60,13 @@ class Mechanisms:
                 durability=0,
                 weight_in_kg=.7,
                 repair_time_discount=0,
-                price_per_piece=320
+                price_per_piece=320,
+                steel=0.1,
+                rubber=0,
+                plastic=0,
+                cardboard=0,
+                aluminium=0.6,
+                battery_acid=0
             ),
             BasicComponent(
                 name='Mechanism basic',
@@ -52,7 +76,13 @@ class Mechanisms:
                 durability=0.1,
                 weight_in_kg=1,
                 repair_time_discount=-.05,
-                price_per_piece=270
+                price_per_piece=270,
+                steel=0.4,
+                rubber=0,
+                plastic=0,
+                cardboard=0,
+                aluminium=0.6,
+                battery_acid=0
             ),
             BasicComponent(
                 name='Mechanism light',
@@ -62,7 +92,13 @@ class Mechanisms:
                 durability=-0.2,
                 weight_in_kg=.6,
                 repair_time_discount=0,
-                price_per_piece=390
+                price_per_piece=390,
+                steel=0.05,
+                rubber=0,
+                plastic=0,
+                cardboard=0,
+                aluminium=0.55,
+                battery_acid=0
             ),
             BasicComponent(
                 name='Mechtech',
@@ -72,6 +108,12 @@ class Mechanisms:
                 durability=0,
                 weight_in_kg=.7,
                 repair_time_discount=.05,
-                price_per_piece=420
+                price_per_piece=420,
+                steel=0.1,
+                rubber=0,
+                plastic=0,
+                cardboard=0,
+                aluminium=0.6,
+                battery_acid=0
             )
         ]

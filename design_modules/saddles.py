@@ -12,7 +12,13 @@ class Saddles:
                 durability=0.1,
                 weight_in_kg=1,
                 repair_time_discount=0,
-                price_per_piece=75
+                price_per_piece=75,
+                steel=0,
+                rubber=0.5,
+                plastic=0,
+                cardboard=0,
+                aluminium=0.5,
+                battery_acid=0
             ),
             BasicComponent(
                 name='Saddle freedom',
@@ -22,7 +28,13 @@ class Saddles:
                 durability=0.1,
                 weight_in_kg=1,
                 repair_time_discount=0,
-                price_per_piece=85
+                price_per_piece=85,
+                steel=0,
+                rubber=0.5,
+                plastic=0,
+                cardboard=0,
+                aluminium=0.5,
+                battery_acid=0
             ),
             BasicComponent(
                 name='Saddle royal',
@@ -32,7 +44,13 @@ class Saddles:
                 durability=0,
                 weight_in_kg=1,
                 repair_time_discount=0,
-                price_per_piece=95
+                price_per_piece=95,
+                steel=0,
+                rubber=0.5,
+                plastic=0,
+                cardboard=0,
+                aluminium=0.5,
+                battery_acid=0
             ),
             BasicComponent(
                 name='Saddle comfort',
@@ -42,7 +60,13 @@ class Saddles:
                 durability=0,
                 weight_in_kg=1.1,
                 repair_time_discount=0,
-                price_per_piece=45
+                price_per_piece=45,
+                steel=0,
+                rubber=0.5,
+                plastic=0,
+                cardboard=0,
+                aluminium=0.6,
+                battery_acid=0
             ),
             BasicComponent(
                 name='Saddle tech',
@@ -52,7 +76,13 @@ class Saddles:
                 durability=0,
                 weight_in_kg=.8,
                 repair_time_discount=0,
-                price_per_piece=100
+                price_per_piece=100,
+                steel=0,
+                rubber=0.5,
+                plastic=0,
+                cardboard=0,
+                aluminium=0.3,
+                battery_acid=0
             ),
             BasicComponent(
                 name='Saddle standard',
@@ -62,6 +92,12 @@ class Saddles:
                 durability=0,
                 weight_in_kg=1,
                 repair_time_discount=0,
-                price_per_piece=50
+                price_per_piece=50,
+                steel=0,
+                rubber=0.5,
+                plastic=0,
+                cardboard=0,
+                aluminium=0.5,
+                battery_acid=0
             ),
         ]

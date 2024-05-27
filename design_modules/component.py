@@ -10,7 +10,14 @@ class BasicComponent:
         durability:float, # acceptable warenty?   +
         weight_in_kg:float,                     # -
         repair_time_discount:float,             # +
-        price_per_piece:float                   # -
+        price_per_piece:float,                   # -
+        
+        steel:float,
+        rubber:float,
+        plastic:float,
+        cardboard:float,
+        aluminium:float,
+        battery_acid:float,
     ):
         self.name = name
         self.remanufacturability = remanufacturability
@@ -20,6 +27,14 @@ class BasicComponent:
         self.weight = weight_in_kg
         self.repair_time_discount = repair_time_discount
         self.price = price_per_piece
+
+        # materials
+        self.steel=steel
+        self.plastic=plastic
+        self.cardboard=cardboard
+        self.rubber=rubber,
+        self.aluminium=aluminium,
+        self.battery_acid=battery_acid
 
 class ChooseByCriteria:
     def __init__(

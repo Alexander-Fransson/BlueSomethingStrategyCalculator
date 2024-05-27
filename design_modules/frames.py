@@ -15,7 +15,13 @@ class Frames(ChooseByCriteria):
                 durability=0.5,
                 weight_in_kg=4,
                 repair_time_discount=0,
-                price_per_piece=310
+                price_per_piece=310,
+                steel=0,
+                rubber=0,
+                plastic=0,
+                cardboard=0,
+                aluminium=4,
+                battery_acid=0
             ),
             BasicComponent(
                 name='Frame_28',
@@ -25,7 +31,13 @@ class Frames(ChooseByCriteria):
                 durability=0.3,
                 weight_in_kg=3.6,
                 repair_time_discount=0,
-                price_per_piece=300
+                price_per_piece=300,
+                steel=0,
+                rubber=0,
+                plastic=0,
+                cardboard=0,
+                aluminium=3.6,
+                battery_acid=0
             ),
             BasicComponent(
                 name='Frame_robust',
@@ -35,7 +47,13 @@ class Frames(ChooseByCriteria):
                 durability=0.1,
                 weight_in_kg=5,
                 repair_time_discount=0,
-                price_per_piece=210
+                price_per_piece=210,
+                steel=5,
+                rubber=0,
+                plastic=0,
+                cardboard=0,
+                aluminium=0,
+                battery_acid=0
             ),
             BasicComponent(
                 name='Frame_light',
@@ -45,7 +63,14 @@ class Frames(ChooseByCriteria):
                 durability=-.1,
                 weight_in_kg=3.2,
                 repair_time_discount=0,
-                price_per_piece=300
+                price_per_piece=300,
+                steel=0,
+                rubber=0,
+                plastic=0,
+                cardboard=0,
+                aluminium=3.2,
+                battery_acid=0
+                
             ),
             BasicComponent(
                 name='Frame_standard',
@@ -55,7 +80,13 @@ class Frames(ChooseByCriteria):
                 durability=0,
                 weight_in_kg=4,
                 repair_time_discount=0,
-                price_per_piece=250
+                price_per_piece=250,
+                steel=0,
+                rubber=0,
+                plastic=0,
+                cardboard=0,
+                aluminium=4,
+                battery_acid=0
             ),
             BasicComponent(
                 name='Frame_de_luxe',
@@ -65,7 +96,13 @@ class Frames(ChooseByCriteria):
                 durability=0,
                 weight_in_kg=4,
                 repair_time_discount=0,
-                price_per_piece=325
+                price_per_piece=325,
+                steel=0,
+                rubber=0,
+                plastic=0,
+                cardboard=0,
+                aluminium=4,
+                battery_acid=0
             ),
             BasicComponent(
                 name='Framed',
@@ -75,7 +112,13 @@ class Frames(ChooseByCriteria):
                 durability=0,
                 weight_in_kg=4,
                 repair_time_discount=0,
-                price_per_piece=310
+                price_per_piece=310,
+                steel=0,
+                rubber=0,
+                plastic=0,
+                cardboard=0,
+                aluminium=4,
+                battery_acid=0
             )
         ]
 

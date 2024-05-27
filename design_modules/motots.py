@@ -12,7 +12,13 @@ class Motors:
                 durability=0,
                 weight_in_kg=2,
                 repair_time_discount=0,
-                price_per_piece=125
+                price_per_piece=125,
+                steel=2,
+                rubber=0,
+                plastic=0,
+                cardboard=0,
+                aluminium=0,
+                battery_acid=0
             ),
             BasicComponent(
                 name='Motor feather',
@@ -22,7 +28,13 @@ class Motors:
                 durability=0,
                 weight_in_kg=1.8,
                 repair_time_discount=0,
-                price_per_piece=195
+                price_per_piece=195,
+                steel=1.8,
+                rubber=0,
+                plastic=0,
+                cardboard=0,
+                aluminium=0,
+                battery_acid=0
             ),
             BasicComponent(
                 name='Motor standard',
@@ -32,7 +44,13 @@ class Motors:
                 durability=0,
                 weight_in_kg=2,
                 repair_time_discount=0,
-                price_per_piece=150
+                price_per_piece=150,
+                steel=2,
+                rubber=0,
+                plastic=0,
+                cardboard=0,
+                aluminium=0,
+                battery_acid=0
             ),
             BasicComponent(
                 name='Motor easy',
@@ -42,7 +60,13 @@ class Motors:
                 durability=0.2,
                 weight_in_kg=1.9,
                 repair_time_discount=.2,
-                price_per_piece=190
+                price_per_piece=190,
+                steel=1.9,
+                rubber=0,
+                plastic=0,
+                cardboard=0,
+                aluminium=0,
+                battery_acid=0
             ),
             BasicComponent(
                 name='Motor endure',
@@ -52,7 +76,13 @@ class Motors:
                 durability=0.2,
                 weight_in_kg=2,
                 repair_time_discount=.15,
-                price_per_piece=190
+                price_per_piece=190,
+                steel=2,
+                rubber=0,
+                plastic=0,
+                cardboard=0,
+                aluminium=0,
+                battery_acid=0
             ),
             BasicComponent(
                 name='Green motor',
@@ -62,7 +92,13 @@ class Motors:
                 durability=0,
                 weight_in_kg=2,
                 repair_time_discount=0,
-                price_per_piece=180
+                price_per_piece=180,
+                steel=2,
+                rubber=0,
+                plastic=0,
+                cardboard=0,
+                aluminium=0,
+                battery_acid=0
             ),
             BasicComponent(
                 name='Blue motor',
@@ -72,6 +108,12 @@ class Motors:
                 durability=0,
                 weight_in_kg=2,
                 repair_time_discount=.05,
-                price_per_piece=220
+                price_per_piece=220,
+                steel=2,
+                rubber=0,
+                plastic=0,
+                cardboard=0,
+                aluminium=0,
+                battery_acid=0
             )
         ]
