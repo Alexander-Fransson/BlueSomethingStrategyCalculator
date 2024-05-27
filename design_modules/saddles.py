@@ -9,7 +9,7 @@ class Saddles:
                 remanufacturability=.5,
                 remanufacturing_cost=35,
                 recyclability=.45,
-                durability=0.1,
+                durability=0.1+1,
                 weight_in_kg=1,
                 repair_time_discount=0,
                 price_per_piece=75
@@ -19,7 +19,7 @@ class Saddles:
                 remanufacturability=.4,
                 remanufacturing_cost=40,
                 recyclability=.5,
-                durability=0.1,
+                durability=0.1+1,
                 weight_in_kg=1,
                 repair_time_discount=0,
                 price_per_piece=85
@@ -29,7 +29,7 @@ class Saddles:
                 remanufacturability=.75,
                 remanufacturing_cost=30,
                 recyclability=.55,
-                durability=0,
+                durability=0+1,
                 weight_in_kg=1,
                 repair_time_discount=0,
                 price_per_piece=95
@@ -39,7 +39,7 @@ class Saddles:
                 remanufacturability=.3,
                 remanufacturing_cost=35,
                 recyclability=.9,
-                durability=0,
+                durability=0+1,
                 weight_in_kg=1.1,
                 repair_time_discount=0,
                 price_per_piece=45
@@ -49,7 +49,7 @@ class Saddles:
                 remanufacturability=.5,
                 remanufacturing_cost=30,
                 recyclability=.65,
-                durability=0,
+                durability=0+1,
                 weight_in_kg=.8,
                 repair_time_discount=0,
                 price_per_piece=100
@@ -59,7 +59,7 @@ class Saddles:
                 remanufacturability=.5,
                 remanufacturing_cost=40,
                 recyclability=.4,
-                durability=0,
+                durability=0+1,
                 weight_in_kg=1,
                 repair_time_discount=0,
                 price_per_piece=50

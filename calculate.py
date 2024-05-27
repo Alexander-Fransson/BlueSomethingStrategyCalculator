@@ -1,4 +1,5 @@
 from financial_statement_modules.income_statement import IncomeStatement
+from design_modules.frames import Frames
 
 #my_income_statement = IncomeStatement()
 
@@ -21,6 +22,14 @@ from financial_statement_modules.income_statement import IncomeStatement
 
 
 print('hi world')
+
+frames = Frames()
+print(frames.calculate_average_of_alternatives())
+
+normlized_frames = frames.normalize_alternatives()
+
+for i in normlized_frames:
+    print(i.__dict__.items())
 
 # Create a python script to optimise the blue eBike group work, 
 # make a github repo and go through the videos and not down what effects the result, 

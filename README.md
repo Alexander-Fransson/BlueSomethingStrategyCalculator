@@ -33,7 +33,7 @@ location: netherlands
 * private equity credit rating low = high risk of default
 
 ### Gearshift
-
+d
 * location: UK
 * convenience priority?
 
