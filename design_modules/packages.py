@@ -19,7 +19,7 @@ class Packages:
                 remanufacturability=.0,
                 remanufacturing_cost=0,
                 recyclability=.0,
-                durability=1+1, # check if acurate
+                durability=0+1, # check if acurate
                 weight_in_kg=.05,
                 repair_time_discount=0,
                 price_per_piece=10

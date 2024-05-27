@@ -1,14 +1,16 @@
+import copy
+
 class BasicComponent:
     def __init__(
         self,
-        name:str,
-        remanufacturability:float,
-        remanufacturing_cost:float,
-        recyclability:float,
-        durability:float, # acceptable warenty?
-        weight_in_kg:float,
-        repair_time_discount:float,
-        price_per_piece:float 
+        name:str,                               # remove
+        remanufacturability:float,              # +
+        remanufacturing_cost:float,             # -
+        recyclability:float,                    # +
+        durability:float, # acceptable warenty?   +
+        weight_in_kg:float,                     # -
+        repair_time_discount:float,             # +
+        price_per_piece:float                   # -
     ):
         self.name = name
         self.remanufacturability = remanufacturability
@@ -27,6 +29,9 @@ class ChooseByCriteria:
         self.alternatives = alternatives
 
     def calculate_average_of_alternatives(self):
+        print(self.alternatives[0].__dict__)
+        print('')
+
         instances = self.alternatives
         sums = {}
         length = len(instances)
@@ -50,28 +55,31 @@ class ChooseByCriteria:
                 sums[key] = value
 
         return averages
-
+    
     def normalize_alternatives(self):
         # Creating dict of keys with empty maluable values
         averages = self.calculate_average_of_alternatives()
-        instances = self.alternatives
-
-        # you need to account for durability being negative 
+        instances = copy.deepcopy(self.alternatives)
+        where_low_is_good = ['remanufacturing_cost', 'weight_in_kg', 'price_per_piece']
 
         for i in instances:
             for key, value in i.__dict__.items():
+                if key in where_low_is_good:
+                    # If value is larger then one the diference is removed from one
+                    value = 1 - (value - 1)
                 if isinstance(value, (int, float)):
                     if averages[key] == 0:
                         setattr(i, key, 0)
                     else:
                         setattr(i, key, value/averages[key])
 
-        # un negafy durability
+        print(self.alternatives[0].__dict__)
+        print('')
                         
         return instances
 
 
-    def normalize_prioritize_and_sort_alternatives(
+    def sort_normalized_alternatives(
         self,
         remanufacturability_priority:int,
         remanufacturing_cost_priority:int,
@@ -81,17 +89,31 @@ class ChooseByCriteria:
         repair_time_discount_priority:int,
         price_per_piece_priority:int     
     ):  
-        pass
         #normalize all the values to be relative to the average of that type
-        
+        normalized_instances = self.normalize_alternatives()
+        prioritized_alternetives = []
+
         # multiply the normalized values with their priority
+        for i in normalized_instances:
+            prioritized_instance = {
+                'name':i.name,
+                'value':(
+                    remanufacturability_priority * i.remanufacturability +
+                    remanufacturing_cost_priority * i.remanufacturing_cost +
+                    recyclability_priority * i.recyclability +
+                    durability_priority * i.durability +
+                    weight_in_kg_priority * i.weight +
+                    repair_time_discount_priority * i.repair_time_discount +
+                    price_per_piece_priority * i.price
+                )
+            }
+            prioritized_alternetives.append(prioritized_instance)
 
-        # reduce the value of the instance to one 
+        sorted_prioritized_alternatives = sorted(prioritized_alternetives, key=lambda x:x['value'])
 
-        # sort the array based on that value
+        # maybe retrun the entire top object
 
-        # deliver the top alternative
-        
-
-    #create normalize prioritize and a function that sorts 
-    #them based on criteria and priority
+        return {
+            'highest':[i for i in self.alternatives if i.name == sorted_prioritized_alternatives[-1]['name']][0].__dict__,
+            'lowest':[i for i in self.alternatives if i.name == sorted_prioritized_alternatives[0]['name']][0].__dict__
+        }

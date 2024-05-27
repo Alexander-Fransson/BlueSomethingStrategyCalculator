@@ -24,12 +24,24 @@ from design_modules.frames import Frames
 print('hi world')
 
 frames = Frames()
-print(frames.calculate_average_of_alternatives())
+# print(frames.calculate_average_of_alternatives())
 
-normlized_frames = frames.normalize_alternatives()
+# normlized_frames = frames.normalize_alternatives()
 
-for i in normlized_frames:
-    print(i.__dict__.items())
+# for i in normlized_frames:
+#     print(i.__dict__.items())
+
+prioritized = frames.sort_normalized_alternatives(
+    remanufacturability_priority=0,
+    remanufacturing_cost_priority=1,
+    recyclability_priority=0,
+    durability_priority=0,
+    weight_in_kg_priority=0,
+    repair_time_discount_priority=0,
+    price_per_piece_priority=0
+)
+
+print(prioritized)
 
 # Create a python script to optimise the blue eBike group work, 
 # make a github repo and go through the videos and not down what effects the result, 
