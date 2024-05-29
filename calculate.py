@@ -6,10 +6,13 @@ from design_modules.frames import Frames
 #############
 # Todo list
 '''
-* Do everything related to design and purchasing and make a small algorithm to calculate the best decisions for you
 * Look at supply chain report and create modules for each component
 * Look at sales roals and sales reports and make modules for everything
 
+
+*Look att all decision videos and the hiering calculationformula
+*See what inputs you have and try to calculate all costs and benefits
+*draw the cashflow
 '''
 
 ###############
